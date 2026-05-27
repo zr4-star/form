@@ -3,7 +3,7 @@ const body = document.body;
 function daftar() {
   const reguser = document.getElementById('user').value;
   const regpw = document.getElementById('pw').value;
-  const regdate = document.getElementById('tgl').value;
+  const regdate = document.getElementById('regmail').value;
   const regmail = document.getElementById('email').value;
   const hasil = document.getElementById('reghasil');
 
