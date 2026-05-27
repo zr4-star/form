@@ -3,7 +3,7 @@ const body = document.body;
 function daftar() {
   const reguser = document.getElementById('user').value;
   const regpw = document.getElementById('pw').value;
-  const regdate = document.getElementById('regmail').value;
+  const regdate = document.getElementById('regdate').value;
   const regmail = document.getElementById('email').value;
   const hasil = document.getElementById('reghasil');
 
@@ -18,7 +18,7 @@ function daftar() {
   localStorage.setItem('tanggal', regdate);
   localStorage.setItem('email', regmail);
 
-  hasil.innerText = 'daftar berhasil';
+  hasil.innerText = 'daftar berhasil!';
   hasil.style.color = 'green';
   setTimeout(() => {
     window.location.href = 'login.html';
@@ -40,19 +40,19 @@ function login() {
   const loginpw = localStorage.getItem('password');
 
   if (loginuser == null) {
-    hasil2.innerText = 'akun tidak ditemukan';
+    hasil2.innerText = 'akun tidak ditemukan!';
     hasil2.style.color = 'yellow';
     return;
   }
 
   if (loguser == loginuser && logpw == loginpw) {
-    hasil2.innerText = 'login berhasil';
+    hasil2.innerText = 'login berhasil!';
     hasil2.style.color = 'green';
     setTimeout(() => {
       window.location.href = 'beranda.html';
     }, 2000);
   } else {
-    hasil2.innerText = 'username atau password salah';
+    hasil2.innerText = 'username atau password salah!';
     hasil2.style.color = 'red';
   }
 }
